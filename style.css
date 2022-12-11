@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.search {
+  margin-top: 20px;
+}
+
+::placeholder {
+  padding-left: 10px;
+}
+.search input {
+  border-radius: 5px;
+  width: 450px;
+  height: 40px;
+  border: none;
+  border-bottom: 0.01mm solid rgb(230, 222, 222);
+}
+.search button {
+  width: 30px;
+  border: none;
+  transform: translateY(15px);
+  background: none;
+}
+
+.search button:hover {
+  cursor: pointer;
+}
+.search button i {
+  font-size: 20px;
+}
+
+.navbar .brand_logo img {
+  width: 200px;
+  transform: translateY(-50px);
+}
+
+.user_items {
+  transform: translateX(-90px);
+}
+.user_items i {
+  padding-right: 20px;
+  margin-top: 35px;
+  font-size: larger;
+}
+
+.user_items i:hover {
+  cursor: pointer;
+}
+
+.hero {
+  height: 1000px;
+}
+.hero button {
+  position: relative;
+  bottom: 400px;
+  left: 215px;
+  height: 50px;
+  width: 150px;
+  background: none;
+  border-color: white;
+  color: white;
+  border-radius: 5px;
+  transition: 1s ease;
+  outline: none;
+  font-size: medium;
+  /* border: none;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); */
+
+}
+.hero button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.hero img {
+  transform: translateY(-150px);
+  height: 100%;
+  width: 100%;
+  scale: 0.9;
+}
+.nav_items {
+  margin-top: 30px;
+  transform: translateX(-160px);
+}
+.nav_items a {
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+}
+
+.nav_items a {
+  margin-right: 50px;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.card1 {
+  height: 600px;
+  width: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: 22px 21px 107px 2px rgba(0, 0, 0, 0.196);
+  -moz-box-shadow: 22px 21px 107px 2px rgba(0, 0, 0, 0.598);
+  box-shadow: 22px 21px 107px 2px rgba(0, 0, 0, 0.375);
+  transition: all ease-out 500ms;
+  background: linear-gradient(45deg, white,purple);
+}
+.card1 button{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    transition: all ease-out 500ms;
+}
+
+.card1 img {
+  height: 100%;
+  width: 100%;
+}
+
+.card1:hover {
+  scale: 1.2;
+ 
+}
+
+.card1:hover .card1 > img{
+    -webkit-filter:contrast(200%);
+    filter: contrast(200%)
+}
+.card1:hover .card1 button{
+    position: relative;
+    cursor: pointer;
+}
+
+.card2 {
+  height: 500px;
+  width: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: 22px 21px 107px 2px rgba(0, 0, 0, 0.359);
+  -moz-box-shadow: 22px 21px 107px 2px rgba(0, 0, 0, 0.68);
+  box-shadow: 22px 21px 107px 2px rgba(0, 0, 0, 0.0);
+  transition: all ease-out 500ms;
+}
+
+.card2:hover {
+  scale: 1.2;
+}
+
+.card2 img {
+  height: 100%;
+  width: 100%;
+}
+.card3 {
+  height: 600px;
+  width: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: 22px 21px 107px 2px rgba(0, 0, 0, 0.283);
+  -moz-box-shadow: 22px 21px 107px 2px rgba(0, 0, 0, 0.68);
+  box-shadow: 22px 21px 107px 2px rgba(0, 0, 0, 0.334);
+  transition: all ease-out 500ms;
+}
+
+.card3 img {
+  height: 100%;
+  width: 100%;
+}
+
+.card_grid {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+}
+
+.card3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.card3:hover {
+  scale: 1.2;
+}
+
+.winter_collection h3{
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 900;
+    text-shadow: 2px 0.1px rgba(255, 255, 255, 0);
+  font-family: Helvetica;
+    background-image: url("https://img.freepik.com/premium-vector/vector-snowfall-isolated-winter-background-snow-overlay-snowflakes-ice-snow-landscape_165143-1243.jpg?w=2000");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.winter_collection{
+    transform: translateY(-50%);
+
+}
+.card_flex{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 1800px;
+  flex-wrap: wrap;
+  margin:auto;
+}
+.card{
+  height: 600px;
+  width: 400px;
+  border:none;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 5px 5px 50px black;
+  overflow: hidden;
+}
+
+.card_img{
+  height: 300px;
+  width: 400px;
+  overflow: hidden;
+  transition: all ease-in-out 500ms;
+}
+.card_img img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  object-fit: cover;
+  transform: translateX(0px);
+  bottom: 0px;
+  transition: all ease-in-out 500ms;;
+}
+
+.btn{
+  width:100%;
+  height: 50px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border:none;
+  position: relative;
+  transform: translateY(300px);
+  transition: all ease-in-out 500ms;
+  background:
+  linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73));
+}
+.card:hover .btn{
+  transform: translateY(250px);
+}
+
+.card:hover .card_img{
+  filter: brightness(50%);
+}
+
+.card:hover .card_img img{
+  scale: 1.2;
+
+}
+
