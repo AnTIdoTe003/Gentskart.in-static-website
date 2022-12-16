@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="./CSS/swiper-bundle.min.css">
     <title>Gentskart</title>
 </head>
 <body>
@@ -27,7 +30,15 @@
                   </form>
             </div>
             <div class="user_items">
-                <i class="fa-solid fa-user"></i>
+                <a class="user_login_signup" href=""><i class="fa-solid fa-user"></i></a> 
+                <div class="user_choice_login">
+                    <div class="choice">
+                        <a href="">Login</a>
+                    </div>
+                    <div class="choice">
+                        <a href="">Sign Up</a>
+                    </div>
+                </div>
                 <i class="fa-solid fa-heart"></i>
                 <i class="fa-solid fa-bag-shopping"></i>
                 <span>My Cart</span>
@@ -42,9 +53,7 @@
         </div>
         <div class="card_grid">
             <div class="card1">
-                <button>Men's Collection</button>
                 <img src="./Images/men_winter_wear.jpg" alt="">
-                
             </div>
             <div class="card2">
                 <img src="./Images/women_winter_wear.jpg" alt="">
@@ -53,44 +62,289 @@
                 <img src="./Images/kid_winter_wear.jpg" alt="">
             </div>
         </div>
+        <div class = "welcome">
+            <h1>Welcome to</h1>
+            <h1>GENTSKART</h1>
+          </div>
         <div class="card_flex">
             <div class="card">
                 <div class="card_img">
-                    <img src="./photo-1505740420928-5e560c06d30e.jpeg" alt="">
+                    <img src="./Images/ft1.jpg" alt="">
                 </div>
            
-                    <button class="btn" type="submit">Add to Cart</button>
+                <div class="button_know">
+                    <a href="" class="btn"><p class="btn_text">Know More <span><i class="fa-sharp fa-solid fa-arrow-right"></i></span></p></a>
+                </div>
+                <div class="prod_desc">
+                    <h3>Product Title</h3>
+                    <p>Rs 1000</p>
+                    <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                    <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                    <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                    <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
              
             </div>
             <div class="card">
                 <div class="card_img">
-                    <img src="./photo-1505740420928-5e560c06d30e.jpeg" alt="">
+                    <img src="./Images/ft2.jpg" alt="">
                 </div>
                 
-                    <button class="btn" type="submit">Add to Cart</button>
-             
+                <div class="button_know">
+                    <a href="" class="btn"><p class="btn_text">Know More <span><i class="fa-sharp fa-solid fa-arrow-right"></i></span></p></a>
+                </div>
+                <div class="prod_desc">
+                    <h3>Product Title</h3>
+                    <p>Rs 1000</p>
+                    <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                    <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                    <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                    <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
             </div>
             <div class="card">
                 <div class="card_img">
-                    <img src="./photo-1505740420928-5e560c06d30e.jpeg" alt="">
+                    <img src="./Images/ft3.jpg" alt="">
                 </div>
-                
-                    <button class ="btn" type="submit">Add to Cart</button>
+                <div class="button_know">
+                    <a href="" class="btn"><p class="btn_text">Know More <span><i class="fa-sharp fa-solid fa-arrow-right"></i></span></p></a>
+                </div>
+                <div class="prod_desc">
+                    <h3>Product Title</h3>
+                    <p>Rs 1000</p>
+                    <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                    <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                    <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                    <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
             </div>
             <div class="card">
                 <div class="card_img">
-                    <img src="./photo-1505740420928-5e560c06d30e.jpeg" alt="">
+                    <img src="./Images/ft4.jpg" alt="">
                 </div>
-                <button class ="btn" type="submit">Add to Cart</button>
+                <div class="button_know">
+                    <a href="" class="btn"><p class="btn_text">Know More <span><i class="fa-sharp fa-solid fa-arrow-right"></i></span></p></a>
+                </div>
+                <div class="prod_desc">
+                    <h3>Product Title</h3>
+                    <p>Rs 1000</p>
+                    <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                    <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                    <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                    <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
             </div>
             <div class="card">
                 <div class="card_img">
-                    <img src="./photo-1505740420928-5e560c06d30e.jpeg" alt="">
+                    <img src="./Images/ft5.jpg" alt="">
                 </div>
-                <button class ="btn" type="submit">Add to Cart</button>
+                <div class="button_know">
+                    <a href="" class="btn"><p class="btn_text">Know More <span><i class="fa-sharp fa-solid fa-arrow-right"></i></span></p></a>
+                </div>
+                <div class="prod_desc">
+                    <h3>Product Title</h3>
+                    <p>Rs 1000</p>
+                    <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                    <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                    <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                    <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
             </div>
           
         </div>
+        <h2 style="text-align:center; transform:translateY(80px); font-size:5rem">Featured Product</h2>
+        <div class="featured_prod">
+            <div class="ft_img">
+                <img src="./Images/ft_img.jpg" alt="">
+            </div>
+            <div class="ft_desc">
+                <h2>Levi's essential western denim coat</h2><br>
+                <h4>Rs 1000</h4>
+                <br>
+                <br>
+                <small style="font-weight: 600; font-size: 13px;">COLOR: NAVYBLUE</small><br>
+                <svg height="100" width="50">
+                    <circle cx="18" cy="50" r="15" stroke="black" stroke-width="3" fill="red" />
+                  </svg> 
+                  <svg height="100" width="50">
+                    <circle cx="18" cy="50" r="15" stroke="black" stroke-width="3" fill="SlateBlue" />
+                  </svg> 
+                  <svg height="100" width="100">
+                    <circle cx="18" cy="50" r="15" stroke="black" stroke-width="3" fill="MediumSeaGreen" />
+                  </svg> 
+                  <p>Size : XS</p>
+                  <div class="sizechart">
+                    <div class="size selected">XS</div>
+                    <div class="size">S</div>
+                    <div class="size">M</div>
+                    <div class="size">L</div>
+                    <div class="size">XL</div>
+                  </div>
+                  <div class="buy_buttons">
+                    <button class ="add_to_cart"><p class="btn_add">Add to Cart <span><i class="fa-sharp fa-solid fa-arrow-right"></i></span></p></button>
+                    <button class ="buy_now">Buy Now</button>
+                  </div>
+                  <br>
+                  <p style="font-size:14px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quo perferendis velit tempore commodi. Pariatur quis aliquid consectetur. Consequatur enim architecto eveniet, eum laborum distinctio ea sequi cumque vel maxime.</p>
+                  <br>
+                  <ul style="margin-left: 18px;">
+                    <li>MACHINE WASH AT MAX.TEMP. 30° C - NORMAL PROCESS</li>
+                    <li>DO NOT BLEACH</li>
+                    <li>DO NOT TUMBLE DRY</li>
+                    <li>IRON AT MAX. TEMP. OF 110° C WITHOUT STEAM</li>
+                    <li>DO NOT DRY CLEAN</li>
+                  </ul>
+                
+            </div>  
+        </div>
+        <div class="choice_looks">
+            <div class="l_text">
+                <h1 style="font-weight:900">SHOP THE LOOKS</h2> <br>
+                <p style="font-size:13px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; letter-spacing:2px ">Our latest endeavour features designs from around the world with materials so comfortable <br> you won't want to wear anything else every again.</p>
+            </div>
+            <div class="looks_grid">
+                <div class="l_grid">
+                    
+                    <img src="./Images/look1.jpg" alt="">
+                    <div class="button_know_grid">
+                        <a href="" class="btn"><p class="btn_text">Know More <span><i class="fa-sharp fa-solid fa-arrow-right"></i></span></p></a>
+                    </div>
+                </div>
+                <div class="l_grid">
+                    <img src="./Images/look2.jpg" alt="">
+                    <div class="button_know_grid">
+                        <a href="" class="btn"><p class="btn_text">Know More <span><i class="fa-sharp fa-solid fa-arrow-right"></i></span></p></a>
+                    </div>
+                </div>
+                <div class="l_grid">
+                    <img src="./Images/look3.jpg" alt="">
+                    <div class="button_know_grid">
+                        <a href="" class="btn"><p class="btn_text">Know More <span><i class="fa-sharp fa-solid fa-arrow-right"></i></span></p></a>
+                    </div>
+                </div>
+                <div class="l_grid">
+                    <img src="./Images/look4.jpg" alt="">
+                    <div class="button_know_grid">
+                        <a href="" class="btn"><p class="btn_text">Know More <span><i class="fa-sharp fa-solid fa-arrow-right"></i></span></p></a>
+                    </div>
+                </div>
+                <div class="l_grid">
+                    <img src="./Images/look5.jpg" alt="">
+                    <div class="button_know_grid">
+                        <a href="" class="btn"><p class="btn_text">Know More <span><i class="fa-sharp fa-solid fa-arrow-right"></i></span></p></a>
+                    </div>
+                </div>
+                <div class="l_grid">
+                    <img src="./Images/look6.jpg" alt="">
+                    <div class="button_know_grid">
+                        <a href="" class="btn"><p class="btn_text">Know More <span><i class="fa-sharp fa-solid fa-arrow-right"></i></span></p></a>
+                    </div>
+                </div>
+                <div class="l_grid">
+                    <img src="./Images/look7.jpg" alt="">
+                    <div class="button_know_grid">
+                        <a href="" class="btn"><p class="btn_text">Know More <span><i class="fa-sharp fa-solid fa-arrow-right"></i></span></p></a>
+                    </div>
+                </div>
+                <div class="l_grid">
+                    <img src="./Images/look8.jpg" alt="">
+                    <div class="button_know_grid">
+                        <a href="" class="btn"><p class="btn_text">Know More <span><i class="fa-sharp fa-solid fa-arrow-right"></i></span></p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials">
+                
+            </div>
+        </div>
+        <section class="container_slider ">
+            <div class="testimonial mySwiper ">
+                <p class="text_head">What Our Customers Say</p>
+                <div class="testi-conti swiper-wrapper">
+                    
+                    <div class="slide swiper-slide">
+                        <img src="./Images/blank-profile-picture-g5facde722_1280.png" alt="" class="image">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo placeat, pariatur sequi magni autem temporibus nihil quidem est molestias maxime aspernatur, delectus dolor modi dolore enim harum architecto necessitatibus labore?</p>
+                        <i class='bx bxs-quote-alt-left quote-icon' ></i>
+                        <div class="details">
+                            <span class="name">Debmalya Biswas</span>
+                        </div>
+                        <div class="rating_star">
+                            <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                            <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                            <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                            <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="./Images/blank-profile-picture-g5facde722_1280.png" alt="" class="image">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo placeat, pariatur sequi magni autem temporibus nihil quidem est molestias maxime aspernatur, delectus dolor modi dolore enim harum architecto necessitatibus labore?</p>
+                        <i class='bx bxs-quote-alt-left quote-icon' ></i>
+                        <div class="details">
+                            <span class="name">Jane Smith</span>
+                            
+                        </div>
+                        <div class="rating_star">
+                            <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                            <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                            <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                            <i class="fa-solid fa-star" style="color:rgb(226, 207, 36)"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <div class="sub_footer">
+            <div class="sub">
+                <div class="sub_icon">
+                    <i class='bx bxs-truck' ></i>
+                </div>
+                <div class="sub_txt">
+                    <p>
+                        <b>Free Shipping</b> on all US order or order above $99</p>
+                </div>
+            </div>
+            <div class="sub">
+                <div class="sub_icon">
+                    <i class='bx bx-phone-call' ></i>
+                </div>
+                <div class="sub_txt">
+                    <p><b>Support 24/7 :</b> Contact us 24 hours a day, 7 days a week</p>
+                </div>
+            </div>
+            <div class="sub">
+                <div class="sub_icon">
+                    <i class='bx bxs-left-arrow-square' ></i>
+                </div>
+                <div class="sub_txt">
+                    <p><b>30 Days Return :</b>  Simply return it within 30 days for an exchange.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="col">
+                <h2>Gentskart</h2>
+                <p>We're available by phone 8334823422 </p>
+                <p>Support@gentkart.in</p>
+                <p>Address: <br>J564/A Fetehpur Garden Reach, Kolkata pin: 700024</p>
+                <p></p>
+            </div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
     </div>
+    <script src="./JS/swiper-bundle.min.js"></script>
+    <script src = "./JS/script.js"></script>
 </body>
 </html>
